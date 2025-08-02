@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hive Login </title>
+    <link rel="stylesheet" href="login.css" />
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="toggle-mode" onclick="toggleMode()">🌙 Dark Mode</div>
+        <h2><u>Login</u></h2>
+        <form name="loginform" onsubmit="return validator()">
+            <label for="username">UserEmail:</label>
+            <input type="text" id="n1" name="username" placeholder="Enter email address">
+            <div class="error" id="userError"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="n2" name="password" placeholder="Only numbers, min 6 chars">
+            <div class="error" id="passError"></div>
+
+            <button class="btn" type="submit">Login</button>
+
+            <div class="forgot-password">
+                <a href="fp.html" target="_blank">Forget Password?</a>
+            </div>
+
+            <div class="signup">
+                <p>Don't have an account? <a href="signup.html" target="_blank">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="login.js">
+
+    </script>
+
+</body>
+
+</html>
